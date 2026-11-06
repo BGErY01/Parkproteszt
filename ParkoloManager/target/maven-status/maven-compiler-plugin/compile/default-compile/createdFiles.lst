@@ -1,9 +1,0 @@
-hu\parkolo\Database.class
-hu\parkolo\controller\AddCompanyController.class
-hu\parkolo\controller\SelectCompanyController$1.class
-hu\parkolo\model\Company.class
-hu\parkolo\Main.class
-hu\parkolo\controller\EntryController.class
-hu\parkolo\controller\MainController.class
-hu\parkolo\controller\SelectCompanyController.class
-hu\parkolo\controller\DashboardController.class
