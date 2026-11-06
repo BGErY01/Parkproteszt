@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="hu.parkolo.controller.AddCompanyController"
+      alignment="CENTER"
+      spacing="18"
+      prefWidth="500"
+      prefHeight="550"
+      style="-fx-background-color: #172438;">
+
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <Label text="ÚJ CÉG REGISZTRÁCIÓJA"
+           style="-fx-font-size: 24px;
+                  -fx-font-weight: bold;
+                  -fx-text-fill: white;"/>
+
+    <Label text="Add meg a cég parkolási adatait!"
+           style="-fx-text-fill: #AABBD0;"/>
+
+    <VBox spacing="6">
+        <Label text="Cég neve"
+               style="-fx-text-fill: white;"/>
+        <TextField fx:id="nameField"
+                   promptText="Cég neve"/>
+    </VBox>
+
+    <VBox spacing="6">
+        <Label text="Parkolóhelyek száma"
+               style="-fx-text-fill: white;"/>
+        <TextField fx:id="parkingSpaceField"
+                   promptText="Parkolóhelyek száma"/>
+    </VBox>
+
+    <VBox spacing="6">
+        <Label text="Mozgáskorlátozott helyek száma"
+               style="-fx-text-fill: white;"/>
+        <TextField fx:id="disabilitySpaceField"
+                   promptText="Mozgáskorlátozott helyek"/>
+    </VBox>
+
+    <VBox spacing="6">
+        <Label text="Óradíj (Ft/óra)"
+               style="-fx-text-fill: white;"/>
+        <TextField fx:id="priceField"
+                   promptText="Óradíj"/>
+    </VBox>
+
+    <HBox spacing="15" alignment="CENTER">
+
+        <Button text="Mégse"
+                onAction="#cancel"
+                prefWidth="120"
+                style="-fx-background-color: #64748B;
+                       -fx-text-fill: white;"/>
+
+        <Button text="Cég mentése"
+                onAction="#saveCompany"
+                prefWidth="150"
+                style="-fx-background-color: #168568;
+                       -fx-text-fill: white;
+                       -fx-font-weight: bold;"/>
+
+    </HBox>
+
+</VBox>
